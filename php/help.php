@@ -1,3 +1,3 @@
 <?php
-echo 'My username is ' .$_ENV["$OPENSHIFT_DB_HOST"] . '!';
+echo 'My username is ' getenv("$OPENSHIFT_DB_HOST") . '!';
 ?>
