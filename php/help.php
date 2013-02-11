@@ -1,3 +1,4 @@
 <?php
-echo 'My username is ' getenv("$OPENSHIFT_DB_HOST") . '!';
+$op = getenv('REMOTE_ADDR');
+echo "$op"
 ?>
