@@ -3,7 +3,7 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
-$ip = getenv('$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT');
+$ip = getenv($OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT);
 define("__CA_DB_HOST__", $ip)
 
 # __CA_DB_USER__ = Database login user name
