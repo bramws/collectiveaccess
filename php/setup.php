@@ -22,7 +22,7 @@
 #
 # __CA_DB_HOST__ = Database server host name (often 'localhost')
 #
-#define("__CA_DB_HOST__", '127.7.174.129:3306');
+define("__CA_DB_HOST__", '127.7.174.129:3306');
 # __CA_DB_USER__ = Database login user name
 #
 #define("__CA_DB_USER__", 'adminfm3uG4h');
@@ -44,7 +44,7 @@ $this->default['login']    = getenv("OPENSHIFT_DB_USERNAME");
 $this->default['password'] = getenv("OPENSHIFT_DB_PASSWORD");
 $this->default['database'] = getenv("OPENSHIFT_APP_NAME");
 
-define("__CA_DB_HOST__", 'host:port');
+#define("__CA_DB_HOST__", 'host:port');
 
 # Database login user name
 define("__CA_DB_USER__", 'login');
