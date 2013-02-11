@@ -22,18 +22,54 @@
 #
 # __CA_DB_HOST__ = Database server host name (often 'localhost')
 #
-define("__CA_DB_HOST__", '127.7.174.129:3306');
+#define("__CA_DB_HOST__", '127.7.174.129:3306');
 # __CA_DB_USER__ = Database login user name
 #
-define("__CA_DB_USER__", 'adminfm3uG4h');
+#define("__CA_DB_USER__", 'adminfm3uG4h');
 
 # __CA_DB_PASSWORD__ = Database login password
 #
-define("__CA_DB_PASSWORD__", 'NLe9mP4ntKbU');
+#define("__CA_DB_PASSWORD__", 'NLe9mP4ntKbU');
 
 # __CA_DB_DATABASE__ = The name of your CollectiveAccess database
 #
-define("__CA_DB_DATABASE__", 'collect5');
+#define("__CA_DB_DATABASE__", 'collect5');
+
+
+
+#Database server host name (often 'localhost')
+$this->default['host']     = getenv("OPENSHIFT_DB_HOST");
+$this->default['port']     = getenv("OPENSHIFT_DB_PORT");
+$this->default['login']    = getenv("OPENSHIFT_DB_USERNAME");
+$this->default['password'] = getenv("OPENSHIFT_DB_PASSWORD");
+$this->default['database'] = getenv("OPENSHIFT_APP_NAME");
+
+define("__CA_DB_HOST__", 'host:port');
+
+# Database login user name
+define("__CA_DB_USER__", 'login');
+
+# Database login password
+define("__CA_DB_PASSWORD__", 'password');
+
+# The name of your CollectiveAccess database
+define("__CA_DB_DATABASE__", 'database');
+
+# Only MySQL databases are currently supported so leave this set to 'mysql'!
+#define("__CA_DB_TYPE__", 'mysql');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #
