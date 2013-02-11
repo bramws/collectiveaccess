@@ -8,7 +8,7 @@ if [ ! -d $OPENSHIFT_DATA_DIR/media ]; then
 fi
 ln -sf $OPENSHIFT_DATA_DIR/media $OPENSHIFT_REPO_DIR/php/media
 
-if [ ! -d $OPENSHIFT_DATA_DIR/uploads ]; then
-    mkdir $OPENSHIFT_DATA_DIR/uploads
+if [ ! -d $OPENSHIFT_DATA_DIR/import ]; then
+    mkdir $OPENSHIFT_DATA_DIR/import
 fi
-ln -sf $OPENSHIFT_DATA_DIR/uploads $OPENSHIFT_REPO_DIR/php/uploads
+ln -sf $OPENSHIFT_DATA_DIR/import $OPENSHIFT_REPO_DIR/php/import

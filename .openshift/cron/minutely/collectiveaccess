@@ -1,2 +1,2 @@
 #!/bin/bash
-php $OPENSHIFT_REPO_DIR/php/support/utils/processTaskQueue.php default
+php $OPENSHIFT_REPO_DIR/php/support/utils/processTaskQueue.php 'default'
