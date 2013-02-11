@@ -3,17 +3,3 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
-$ip = getenv($OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT);
-define("__CA_DB_HOST__", $ip)
-
-# __CA_DB_USER__ = Database login user name
-#
-define("__CA_DB_USER__", 'my_database_user');
-
-# __CA_DB_PASSWORD__ = Database login password
-#
-define("__CA_DB_PASSWORD__", 'my_database_password');
-
-# __CA_DB_DATABASE__ = The name of your CollectiveAccess database
-#
-define("__CA_DB_DATABASE__", 'name_of_my_database');
