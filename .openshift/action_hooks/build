@@ -3,8 +3,8 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
-
-define("__CA_DB_HOST__", $OPENSHIFT_DB_HOST:$OPENSHIFT_DB_PORT);
+$ip = getenv('REMOTE_ADDR');
+define("__CA_DB_HOST__", $ip)
 
 # __CA_DB_USER__ = Database login user name
 #
