@@ -1,4 +1,4 @@
 <?php
-$op = getenv('REMOTE_ADDR');
+$op = getenv('OPENSHIFT_DB_USERNAME');
 echo "$op"
 ?>
