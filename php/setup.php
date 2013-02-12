@@ -23,7 +23,7 @@
 # __CA_DB_HOST__ = Database server host name (often 'localhost')
 #
 define("__CA_DB_HOST__", getenv('OPENSHIFT_MYSQL_DB_HOST') );
-#define("__CA_DB_HOST__", '127.7.174.129:3306');
+
 # __CA_DB_USER__ = Database login user name
 #
 define("__CA_DB_USER__", getenv('OPENSHIFT_MYSQL_DB_USERNAME') );
@@ -35,7 +35,6 @@ define("__CA_DB_PASSWORD__", getenv('OPENSHIFT_MYSQL_DB_PASSWORD') );
 # __CA_DB_DATABASE__ = The name of your CollectiveAccess database
 #
 define("__CA_DB_DATABASE__", getenv('OPENSHIFT_APP_NAME') );
-
 
 #
 # __CA_APP_DISPLAY_NAME__ = the name of your system for display purposes
