@@ -22,6 +22,7 @@
 #
 # __CA_DB_HOST__ = Database server host name (often 'localhost')
 #
+define("__CA_DB_PORT__", getenv('OPENSHIFT_MYSQL_DB_PORT') );
 define("__CA_DB_HOST__", getenv('OPENSHIFT_MYSQL_DB_HOST') );
 
 # __CA_DB_USER__ = Database login user name
