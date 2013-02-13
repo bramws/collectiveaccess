@@ -18,7 +18,7 @@ Installation is very easy, follow the steps:
 7) Add MySQL cartridge to your application
 8) Add CRON cartridge to your application
 9) Go to public URL and start CollectiveAccess installation
-10) Enjoy CollectiveAccess on OpenShift without any warranty. 
+10) You can test now CollectiveAccess on OpenShift without any warranty. 
 
 For any questions or suggestions about this OpenShift CollectiveAccess release you can contact me by e-mail: bram@faronet.be or ask your questions in the CollectiveAccess or OpenShift community.  
 
