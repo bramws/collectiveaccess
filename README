@@ -3,6 +3,24 @@ CollectiveAccess Openshift 1.3
 
 Create a free Red Hat Openshift account: https://openshift.redhat.com    
 
-Getting started: https://openshift.redhat.com/app/getting_started
+Getting started with OpenShift: https://openshift.redhat.com/app/getting_started
 
-CollectiveAccess installation: http://wiki.collectiveaccess.org/index.php?title=Installation_%28Providence%29
+CollectiveAccess: http://www.collectiveaccess.org
+
+Installation is very easy, follow the steps:
+
+1) Login into OpenShift: https://openshift.redhat.com
+2) Add application
+3) Select PHP5.3 
+4) Give your application a name (Public URL)
+5) Change Source code from default to git://github.com/bramws/collectiveaccess.git
+6) Create Application
+7) Add MySQL cartridge to your application
+8) Add CRON cartridge to your application
+9) Go to public URL and start CollectiveAccess installation
+10) Enjoy CollectiveAccess on OpenShift without any warranty. 
+
+For any questions or suggestions about this OpenShift CollectiveAccess release you can contact me by e-mail: bram@faronet.be or ask your questions in the CollectiveAccess or OpenShift community.  
+
+
+
