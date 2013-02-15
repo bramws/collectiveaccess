@@ -17,6 +17,7 @@ Installation is very easy, follow the steps:
 6) Create Application
 7) Add MySQL cartridge to your application
 8) Add CRON cartridge to your application
+EXTRA STEP to FIX bug: mysql need to restarted before go to STEP9 otherwise server don't find Mysql variables. Git clone respoitory, change something (like php/health_check.php from 1-->2) git add file, git commit and git push. 
 9) Go to public URL and start CollectiveAccess installation
 10) You can test now CollectiveAccess on OpenShift without any warranty. 
 
