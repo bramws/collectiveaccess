@@ -11,7 +11,7 @@ Installation is very easy, follow the steps:
 
 1) Login into OpenShift: https://openshift.redhat.com
 2) Add application
-3) Select PHP5.3 
+3) Select PHP-5.3 or Zend server
 4) Give your application a name (Public URL)
 5) Change Source code from default to git://github.com/bramws/collectiveaccess.git
 6) Create Application
