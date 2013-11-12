@@ -3,3 +3,21 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
+cd $OPENSHIFT_DATA_DIR
+mkdir bin
+wget http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz 
+wget http://ffmpeg.org/releases/ffmpeg-2.0.1.tar.gz
+ 
+tar -xvf yasm-1.2.0.tar.gz
+cd yasm-1.2.0
+./configure --prefix=$OPENSHIFT_DATA_DIR/bin --bindir=$OPENSHIFT_DATA_DIR/bin
+make
+make install
+export PATH=$OPENSHIFT_DATA_DIR/bin:$PATH
+ 
+cd $OPENSHIFT_DATA_DIR
+tar -xvf ffmpeg-2.0.1.tar.gz
+cd ffmpeg-2.0.1
+./configure --prefix=$OPENSHIFT_DATA_DIR/bin --bindir=$OPENSHIFT_DATA_DIR/bin
+make
+make install
