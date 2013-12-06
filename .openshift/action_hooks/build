@@ -6,6 +6,6 @@
 cd $OPENSHIFT_DATA_DIR
 mkdir bin
 wget http://ffmpeg.gusari.org/static/64bit/ffmpeg.static.64bit.2013-12-06.tar.gz
-tar -xvf ffmpeg.static.64bit.2013-10-03.tar.gz
+tar -xvf ffmpeg.static.64bit.2013-12-06.tar.gz
 cd ffmpeg.static.64bit.2013-12-06
 ./ffmpeg --prefix=$OPENSHIFT_DATA_DIR/bin --bindir=$OPENSHIFT_DATA_DIR/bin
